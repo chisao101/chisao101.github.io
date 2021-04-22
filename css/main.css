@@ -62,6 +62,8 @@ header{
 /* hero styles */
 .hero{
     background: url(/images/backgroundImg-01.jpg);
-    height: 100vh;
-    background-size: ;
+    height: calc(100vh - 9vh);
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
 }
