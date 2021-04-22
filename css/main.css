@@ -62,8 +62,37 @@ header{
 /* hero styles */
 .hero{
     background: url(/images/backgroundImg-01.jpg);
-    height: calc(100vh - 9vh);
+    height: calc(100vh - 8.8vh);
     background-size: cover;
-    object-fit: cover;
-    position: relative;
+    /* object-fit: cover; */
+    background-position: center;
+    color: aliceblue;
+    display: grid;
+    place-items: center;
+}
+.hero-wrap{
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(12px);
+    padding: 1rem;
+    width: 50%;
+    border-radius: 12px;
+    display: grid;
+    justify-content: center;
+}
+.hero h1{
+    font-size: 4.5rem;
+    line-height: 110%;
+    padding: 1rem;
+}
+.hero p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 1rem;
+}
+.hero-cta{
+    background: rgba(0, 0, 255, 1);
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    margin: 1.5rem auto;
+    max-width: 300px;
 }
