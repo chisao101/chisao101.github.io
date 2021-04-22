@@ -14,6 +14,7 @@ header{
     padding: 1.5rem;
     justify-content: space-around;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 .logo-wrap{
     max-width: 300px;
@@ -31,21 +32,29 @@ header{
 .nav-menu{
     list-style-type: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+..nav-menu-item{
+    width: 100%;
+
 }
 .nav-menu-item a{
     text-decoration: none;
     color: aliceblue;
 }
 /* .search-box{
-    position: absolute;
+    max-width: 20%;
 } */
 .search-txt{
     padding: .3rem .7rem;
     border: none;
     border-radius: 50px;
     line-height: 100%;
+    min-width: 250px;
 }
 .search-txt:focus{
     outline: none;
@@ -53,46 +62,66 @@ header{
 .fa-search{
     position: relative;
     color: #333;
-    background: none;
-    text-decoration: none;
-    border: none;
     right: 40px;
+    outline: none;
 }
 /* header styles end */
 /* hero styles */
 .hero{
-    background: url(/images/backgroundImg-01.jpg);
+    background: url(/images/pexels-cottonbro-4066294.jpg);
     height: calc(100vh - 8.8vh);
     background-size: cover;
-    /* object-fit: cover; */
     background-position: center;
-    color: aliceblue;
+    color: #333;
     display: grid;
     place-items: center;
 }
 .hero-wrap{
-    background: rgba(0,0,0,.5);
-    backdrop-filter: blur(12px);
-    padding: 1rem;
-    width: 50%;
-    border-radius: 12px;
+    /* padding: 1rem; */
+    width: 100%;
+    height: 25vh;
+    border-radius: 22px;
     display: grid;
     justify-content: center;
+    transform: rotate(-4deg);
+    /* border: 2px solid red; */
+}
+.bc-top,
+.bc-bottom{
+    margin-top: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5rem;
+}
+.fa-palette{
+    color: #333;
+    font-size: 40px;
+}
+.bc-middle{
+    text-align: center;
 }
 .hero h1{
-    font-size: 4.5rem;
-    line-height: 110%;
-    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 120%;
+    /* padding: .2rem; */
 }
 .hero p{
-    font-size: 1.5rem;
-    font-weight: 200;
-    padding: 1rem;
+    font-size: .8rem;
+    font-weight: 400;
+    /* padding: .2rem; */
 }
-.hero-cta{
-    background: rgba(0, 0, 255, 1);
-    padding: .5rem 3rem;
+
+.hero-cta, .portfolio{
+    background: #ff0000;
+    color: #fff;
+    padding: .3rem 1.5rem;
     border-radius: 5px;
-    margin: 1.5rem auto;
-    max-width: 300px;
+    margin: .5rem auto;
+    width: 130px;
+    height: 30px;
+    font-size: .7rem;
+    border: none;
+}
+.hero-cta:hover, .portfolio:hover{
+    background: #dd0000;
 }
